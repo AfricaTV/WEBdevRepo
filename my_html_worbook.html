@@ -1,10 +1,16 @@
-<form action="https://api.example.com/search" method="GET">
-  <input name="q" placeholder="finder">
+<form action="https://api.example.com/search" 
+method="get" 
+accept-charset="UTF-8" 
+autocomplete="on" 
+target="_self" 
+name="searchForm">
+  <input name="q" placeholder="finder" required>
+  <input type="hidden" name="lang" value="en">
   <button type="submit">Find</button>
 </form>
 
-<form action="https://api.example.com/contact" method="POST">
-  <input name="name"  required>
+<form action="https://api.example.com/contact" method="post" accept-charset="UTF-8" enctype="application/x-www-form-urlencoded" autocomplete="on" name="contactForm">
+  <input name="name" required>
   <input name="email" type="email" required>
   <button type="submit">Send</button>
 </form>
